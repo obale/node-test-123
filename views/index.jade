@@ -1,5 +1,12 @@
 extends layout
 
 block content
-  h1= title
-  p Welcome to #{title}
+ .reveal
+      // Any section element inside of this container is displayed as a slide
+      .slides
+        section
+          h1 Reveal.js
+        section
+            h1 THE END
+            h2 BY Hakim El Hattab / hakim.se
+    script(src="/javascripts/index.js")
